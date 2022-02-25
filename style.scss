@@ -1,5 +1,6 @@
 $bg-color: #025159;
 $btn-bg-color: #f28705;
+$btn-hover-color: #ff5e00;
 
 body {
   margin: 0;
@@ -21,18 +22,22 @@ form {
     font-size: 1.2rem;
     padding: 0.5em 1em;
     border: none;
+
+    &[type='submit'] {
+      background-color: $btn-bg-color;
+      color: #fff;
+      font-weight: 700;
+      cursor: pointer;
+      margin-top: 0.5em;
+
+      &:hover {
+        background-color: $btn-hover-color;
+      }
+    }
   }
 
   :focus {
     outline: none;
-  }
-
-  [type='submit'] {
-    background-color: $btn-bg-color;
-    color: #fff;
-    font-weight: 700;
-    cursor: pointer;
-    margin-top: 0.5em;
   }
 }
 

@@ -26,16 +26,20 @@ form input {
   border: none;
 }
 
-form :focus {
-  outline: none;
-}
-
-form [type='submit'] {
+form input[type='submit'] {
   background-color: #f28705;
   color: #fff;
   font-weight: 700;
   cursor: pointer;
   margin-top: 0.5em;
+}
+
+form input[type='submit']:hover {
+  background-color: #ff5e00;
+}
+
+form :focus {
+  outline: none;
 }
 
 main {
