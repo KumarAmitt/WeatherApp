@@ -1,8 +1,128 @@
 body {
+  margin: 0;
+  padding: 0;
+  background-color: #025159;
+}
+
+.container {
+  max-width: 90%;
+  margin: auto;
+  margin-top: 2em;
+}
+
+form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+form input {
+  font-size: 1.2rem;
+  padding: 0.5em 1em;
+  border: none;
+}
+
+form :focus {
+  outline: none;
+}
+
+form [type='submit'] {
+  background-color: #f28705;
+  color: #fff;
+  font-weight: 700;
+  cursor: pointer;
+  margin-top: 0.5em;
+}
+
+main {
+  margin-top: 2em;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.8)));
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.8));
+  color: #fff;
+  text-align: center;
+  margin-top: 4em;
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+}
+
+main .weather-info {
+  padding: 1em;
+}
+
+main .weather-info .units {
+  text-align: right;
+  cursor: pointer;
+}
+
+main .weather-info .units .metric {
+  border: 1px solid #fff;
+  padding: 0.4em;
+}
+
+main .weather-info .units :hover {
+  color: #000;
+  background-color: #fff;
+}
+
+main .weather-info .city {
+  margin-bottom: 0.5em;
+}
+
+main .weather-info .temp {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+main .weather-info .temp img {
   background-color: yellow;
 }
 
-h1 {
-  color: red;
+main .weather-info .temp span {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-left: 0.2em;
+}
+
+main .weather-info .desc {
+  text-transform: capitalize;
+  margin-top: 0.5em;
+}
+
+@media (min-width: 768px) {
+  .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 90vh;
+  }
+  header {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+  }
+  main {
+    -webkit-box-flex: 2;
+        -ms-flex: 2;
+            flex: 2;
+    margin-top: 0;
+    margin-left: 2em;
+  }
 }
 /*# sourceMappingURL=style.css.map */
